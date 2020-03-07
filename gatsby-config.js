@@ -5,5 +5,13 @@
  */
 
 module.exports = {
-  /* Your site config here */
-}
+  plugins: [
+    {
+      resolve: `gatsby-source-drupal`,
+      options: {
+        // preview: true,
+        baseUrl: `https://dev-doodledeveloper.pantheonsite.io/`,
+      },
+    },
+  ],
+};
